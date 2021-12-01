@@ -1,4 +1,4 @@
-import { readAsync } from './lib.js';
+import { readAsync, unpackLines } from './lib.js';
 
 const input = await readAsync('1.input');
 const lines = unpackLines(input);
