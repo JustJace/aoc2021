@@ -19,7 +19,6 @@ function p1(instructions) {
         }
     }
     
-    
     return depth * horizontal;
 }
 
