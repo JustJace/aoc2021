@@ -1,7 +1,7 @@
-import { readAsync, unpackLines } from './lib.js';
+import { readAsync, unpackLinesAsNumbers } from './lib.js';
 
 const input = await readAsync('../inputs/1.input');
-const lines = unpackLines(input);
+const lines = unpackLinesAsNumbers(input);
 
 let part1 = 0;
 

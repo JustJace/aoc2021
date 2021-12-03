@@ -5,6 +5,10 @@ function readAsync(path) {
 }
 
 function unpackLines(s) {
+    return s.split('\r\n');
+}
+
+function unpackLinesAsNumbers(s) {
     return s.split('\r\n').map(l => isNaN(l) ? l : +l);
 }
 
@@ -30,6 +34,7 @@ function unpackCsv(s) {
 export {
     readAsync,
     unpackLines,
+    unpackLinesAsNumbers,
     unpackSections,
     unpackRegex,
     unpackCsv
