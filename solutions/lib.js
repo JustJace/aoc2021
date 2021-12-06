@@ -16,7 +16,7 @@ function unpackSections(s) {
     return s.split('\r\n\r\n');
 }
 
-function unpackRegex(s, expectedCount = 1, pattern, ) {
+function unpackRegex(s, expectedCount = 1, pattern) {
     const match = s.match(pattern);
     const groups = [];
     for (let i = 1; i <= expectedCount; i++) {
