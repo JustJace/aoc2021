@@ -31,11 +31,16 @@ function unpackCsv(s) {
     return split.map(v => isNaN(v) ? v : +v);
 }
 
+function range(n) {
+    return [...Array(n).keys()];
+}
+
 export {
     readAsync,
     unpackLines,
     unpackLinesAsNumbers,
     unpackSections,
     unpackRegex,
-    unpackCsv
+    unpackCsv,
+    range
 }
